@@ -7,4 +7,12 @@ public class Service extends LaptopStore {
         this.duration = duration;
         this.provider = provider;
     }
+
+    @Override
+    void displayDetails() {
+        System.out.println("Product Name: " + name);
+        System.out.println("Price: " + price);
+        System.out.println("Duration: " + duration + "hours");
+        System.out.println("Provider: " + provider);
+    }
 }
